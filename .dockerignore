@@ -1,0 +1,48 @@
+# Git
+.git
+.gitignore
+
+# 노드 모듈
+node_modules
+*/node_modules
+
+# 캐시 파일
+__pycache__
+*.py[cod]
+*$py.class
+.pytest_cache
+.coverage
+htmlcov
+.npm
+
+# 빌드 파일
+*.spec
+dist
+build
+*.exe
+*.o
+*.a
+*.so
+
+# 환경 설정
+.env
+.venv
+env/
+venv/
+ENV/
+.idea
+.vscode
+
+# 로컬 데이터 및 로그
+*.log
+*.db
+*.sqlite3
+instance/
+uploads/
+exports/
+templates/
+aggregations/
+
+# 문서 및 기타
+README.md
+docs/ 
