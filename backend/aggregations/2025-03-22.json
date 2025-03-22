@@ -1,0 +1,41 @@
+[
+  {
+    "type": "conditional_aggregate",
+    "description": "조건부 집계: 이름 열이 '이름_0'인 행의 나이 열 합계",
+    "result": "조건 충족 행 수: 1, 합계: 18",
+    "affectedRows": 1,
+    "sumValue": 18.0,
+    "status": "success",
+    "conditionColumn": "이름",
+    "conditionValue": "이름_0",
+    "aggregateColumn": "나이",
+    "dashboardName": "기본 대시보드",
+    "date": "2025-03-22"
+  },
+  {
+    "type": "conditional_aggregate",
+    "description": "조건부 집계: 이름 열이 '이름_0'인 행의 나이 열 합계",
+    "result": "조건 충족 행 수: 1, 합계: 18",
+    "affectedRows": 1,
+    "sumValue": 18.0,
+    "status": "success",
+    "conditionColumn": "이름",
+    "conditionValue": "이름_0",
+    "aggregateColumn": "나이",
+    "dashboardName": "기본 대시보드",
+    "date": "2025-03-22"
+  },
+  {
+    "type": "conditional_aggregate",
+    "description": "조건부 집계: 이름 열이 '이름_1'인 행의 나이 열 합계",
+    "result": "조건 충족 행 수: 1, 합계: 21",
+    "affectedRows": 1,
+    "sumValue": 21.0,
+    "status": "success",
+    "conditionColumn": "이름",
+    "conditionValue": "이름_1",
+    "aggregateColumn": "나이",
+    "dashboardName": "기본 대시보드",
+    "date": "2025-03-22"
+  }
+]

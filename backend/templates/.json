@@ -1,0 +1,12 @@
+{
+  "name": "명일",
+  "operations": [
+    {
+      "type": "replace",
+      "sourceColumn": "나이",
+      "targetColumn": "이름",
+      "searchValue": "18",
+      "replaceValue": "바보"
+    }
+  ]
+}
