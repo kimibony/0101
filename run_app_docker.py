@@ -49,7 +49,7 @@ def main():
         
         # 서버 프로세스 시작 - 0.0.0.0으로 바인딩하여 외부 접속 허용
         print("백엔드 서버를 시작합니다...")
-        port = os.environ.get("PORT", "5000")
+        port = int(os.environ.get("PORT", "5000"))
         flask_process = subprocess.Popen([
             sys.executable, 
             '-m', 'flask', 
