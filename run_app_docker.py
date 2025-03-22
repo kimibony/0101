@@ -55,6 +55,7 @@ def main():
             '-m', 'flask', 
             'run', 
             '--host=0.0.0.0'
+            f'--port={port}'
         ], 
         env=env, 
         stdout=subprocess.PIPE,
