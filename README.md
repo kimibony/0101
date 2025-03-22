@@ -71,6 +71,51 @@ cd frontend
 npm start
 ```
 
+## 도커로 실행하기
+
+### 필요 조건
+- Docker 설치
+- Docker Compose 설치
+
+### 실행 방법
+
+1. 프로젝트 루트 디렉토리에서 다음 명령어를 실행합니다:
+
+```bash
+docker-compose up -d
+```
+
+2. 애플리케이션은 다음 URL로 접근할 수 있습니다:
+   - 웹 인터페이스: http://localhost
+   - 백엔드 API: http://localhost/api
+
+### 중지 방법
+
+```bash
+docker-compose down
+```
+
+### 로그 확인
+
+```bash
+docker-compose logs -f
+```
+
+### 개별 서비스 로그 확인
+
+```bash
+docker-compose logs -f backend
+docker-compose logs -f frontend
+```
+
+### 데이터 볼륨
+
+다음 디렉토리들은 Docker 볼륨으로 마운트됩니다:
+- `./instance`: 데이터베이스 파일
+- `./uploads`: 업로드된 파일
+- `./exports`: 내보내기된 파일
+- `./aggregations`: 집계 결과
+
 ## 사용 방법
 
 1. 엑셀 파일을 드래그 앤 드롭하거나 파일 선택 버튼을 클릭하여 업로드합니다.
