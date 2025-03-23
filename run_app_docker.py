@@ -70,12 +70,16 @@ def main():
         # 서버 로그 출력
         while True:
             line = flask_process.stdout.readline()
-            if not line and flask_process.poll() is not None:
+            line_err = flask_process.stderr.readline()
+
+            if not line and not line_err and flask_process.poll() is not None:
                 print("서버가 종료되었습니다.")
                 break
             
             if line:
-                print(line.strip())
+                print("✅ STDOUT:", line.strip())
+            if line_err:
+                print("❌ STDERR:", line_err.strip())
     
     except KeyboardInterrupt:
         print("\n사용자에 의해 중단되었습니다.")
