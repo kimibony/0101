@@ -51,11 +51,11 @@ def main():
         print("백엔드 서버를 시작합니다...")
         
         flask_process = subprocess.Popen([
-            sys.executable, 
-            '-m', 'flask', 
-            'run', 
-            '--host=0.0.0.0'
-            '--port', os.environ.get("PORT", "5000")
+            sys.executable,
+            '-m', 'flask',
+            'run',
+            '--host=0.0.0.0',
+            f'--port={os.environ.get("PORT", "5000")}'
         ], 
         env=env, 
         stdout=subprocess.PIPE,
